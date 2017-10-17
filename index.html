@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../favicon.ico">
+        <title>Starter Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+        <style type="text/css">
+            .btn-green {
+            background-color: rgba(195, 23, 40, 0.89);
+            color: #fff;
+            border-radius: 0px;
+            padding: 10px 16px;
+            font-size: 18px;
+            line-height: 1.33;
+            }
+            .btn-green:hover, .btn-green:focus {
+            background-color: rgba(195, 23, 40, 1);
+            color: #fff;
+            padding: 10px 16px;
+            font-size: 18px;
+            line-height: 1.33;
+            }
+            .btn {
+                border-radius: 0px;
+            }
+            .panel-footer {
+            padding: 0 15px;
+            border:none;
+            text-align: right;
+            background-color: #fff;
+            }
+            .panel-body {
+            text-align: left!important;
+            font-size: larger;
+            }
+            .navbar {
+            position: relative;
+            min-height: 50px;
+            margin-bottom: 0px;
+            border: 1px solid transparent;
+            }
+            h5, h5 {
+            font-size: 24px;
+            }
+            .mt-0 {
+            margin-top: 0 !important;
+            }
+            .mt-1 {
+            margin-top: .25rem !important;
+            }
+            .mt-2 {
+            margin-top: .5rem !important;
+            }
+            .mt-3 {
+            margin-top: 1rem !important;
+            }
+            .mt-4 {
+            margin-top: 1rem !important;
+            }
+            .mt-5 {
+            margin-top: 3rem !important;
+            }
+            .mb-0 {
+            margin-bottom: 0 !important;
+            }
+            .mb-1 {
+            margin-bottom: .25rem !important;
+            }
+            .mb-2 {
+            margin-bottom: .5rem !important;
+            }
+            .mb-3 {
+            margin-bottom: 1rem !important;
+            }
+            .ml-0 {
+            margin-left: 0 !important;
+            }
+            .ml-1 {
+            margin-left: .25rem !important;
+            }
+            .ml-2 {
+            margin-left: .5rem !important;
+            }
+            .ml-3 {
+            margin-left: 1rem !important;
+            }
+            .mr-0 {
+            margin-right: 0 !important;
+            }
+            .mr-1 {
+            margin-right: .25rem !important;
+            }
+            .mr-2 {
+            margin-right: .5rem !important;
+            }
+            .mr-3 {
+            margin-right: 1rem !important;
+            }
+            .mx-0 {
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+            }
+            .mx-1 {
+            margin-right: .25rem !important;
+            margin-left: .25rem !important;
+            }
+            .mx-2 {
+            margin-right: .5rem !important;
+            margin-left: .5rem !important;
+            }
+            .mx-3 {
+            margin-right: 1rem !important;
+            margin-left: 1rem !important;
+            }
+            .my-0 {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            }
+            .my-1 {
+            margin-top: .25rem !important;
+            margin-bottom: .25rem !important;
+            }
+            .my-2 {
+            margin-top: .5rem !important;
+            margin-bottom: .5rem !important;
+            }
+            .my-3 {
+            margin-top: 1rem !important;
+            margin-bottom: 1rem !important;
+            }
+            /* PADDING */
+            .pt-0 {
+            padding-top: 0 !important;
+            }
+            .pt-1 {
+            padding-top: .25rem !important;
+            }
+            .pt-2 {
+            padding-top: .5rem !important;
+            }
+            .pt-3 {
+            padding-top: 1rem !important;
+            }
+            .pb-0 {
+            padding-bottom: 0 !important;
+            }
+            .pb-1 {
+            padding-bottom: .25rem !important;
+            }
+            .pb-2 {
+            padding-bottom: .5rem !important;
+            }
+            .pb-3 {
+            padding-bottom: 1rem !important;
+            }
+            .pl-0 {
+            padding-left: 0 !important;
+            }
+            .pl-1 {
+            padding-left: .25rem !important;
+            }
+            .pl-2 {
+            padding-left: .5rem !important;
+            }
+            .pl-3 {
+            padding-left: 1rem !important;
+            }
+            .pr-0 {
+            padding-right: 0 !important;
+            }
+            .pr-1 {
+            padding-right: .25rem !important;
+            }
+            .pr-2 {
+            padding-right: .5rem !important;
+            }
+            .pr-3 {
+            padding-right: 1rem !important;
+            }
+            .px-0 {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+            }
+            .px-1 {
+            padding-right: .25rem !important;
+            padding-left: .25rem !important;
+            }
+            .px-2 {
+            padding-right: .5rem !important;
+            padding-left: .5rem !important;
+            }
+            .px-3 {
+            padding-right: 1rem !important;
+            padding-left: 1rem !important;
+            }
+            .py-0 {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            }
+            .py-1 {
+            padding-top: .25rem !important;
+            padding-bottom: .25rem !important;
+            }
+            .py-2 {
+            padding-top: .5rem !important;
+            padding-bottom: .5rem !important;
+            }
+            .py-3 {
+            padding-top: 1rem !important;
+            padding-bottom: 1rem !important;
+            }
+            .py-4 {
+            padding-top: 1.5rem !important;
+            padding-bottom: 1.5rem !important;
+            }
+            .py-5 {
+            padding-top: 2.25rem !important;
+            padding-bottom: 2.25rem !important;
+            }
+            .pa-0 {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+            }
+            .pa-1 {
+            padding-top: .25rem !important;
+            padding-bottom: .25rem !important;
+            padding-right: .25rem !important;
+            padding-left: .25rem !important;
+            }
+            .pa-2 {
+            padding-top: .5rem !important;
+            padding-bottom: .5rem !important;
+            padding-right: .5rem !important;
+            padding-left: .5rem !important;
+            }
+            .pa-3 {
+            padding-top: 1rem !important;
+            padding-bottom: 1rem !important;
+            padding-right: 1rem !important;
+            padding-left: 1rem !important;
+            }
+            .navbar {
+            position: relative;
+            min-height: 70px;
+            margin-bottom: 0px;
+            border: 1px solid transparent;
+            font-size: larger;
+            }
+            label {
+            padding-bottom: 8px;
+            padding-top: 8px;
+            }
+            .grey-bk {
+            background-color: #eeeeee;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-default ">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><img src="http://d3n8a8pro7vhmx.cloudfront.net/labourleave/sites/1013/meta_images/original/labour-future-logo-website-png.png?1506101884" class="img-responsive" width="90%"></a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Login</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Account details</a></li>
+                                    <li><a href="#">Surveys</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Labour Future Website</a></li>
+                                    <li><a href="#">Labour Future Facebook</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </header>
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">Labour Future Survey</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Please login or create an account below</p>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-default">Login</button>
+                    <button type="submit" class="btn btn-success">Create account</button>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 pa-3 text-left">
+                    <h1>Begin the survey here</h1>
+                    <div id="surveyContainer"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="surveyResult"></div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container-fluid mt-5 grey-bk pt-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><small>Copyright 2017 &nbsp;&nbsp;|&nbsp;&nbsp; <a href="#">Labour Future</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="#">Privacy</a>  &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="#">Terms</a>  &nbsp;&nbsp;|&nbsp;&nbsp;</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://surveyjs.azureedge.net/0.12.32/survey.jquery.min.js"></script>
+        <script type="text/javascript">
+            Survey.Survey.cssType = "bootstrap";
+            Survey.defaultBootstrapCss.navigationButton = "btn btn-green";
+            var myCss = {
+                matrix: {root: "table table-striped"},
+                navigationButton: "button btn-lg"   
+            };
+            
+            var surveyJSON = {
+            pages: [
+            {
+            elements: [
+            {
+            type: "checkbox",
+            choices: [
+            "Facebook Follower ",
+            "Labour Future Member",
+            "Email Subscriber",
+            "Local / National Organiser ",
+            "Social media advocate ",
+            "Have attended Labour Future events and/or rallies",
+            "Volunteered with Labour Future during the 2017 general election"
+            ],
+            name: "How are you currently involved with Labour Future? "
+            }
+            ],
+            name: "page1"
+            },
+            {
+            elements: [
+            {
+            type: "checkbox",
+            choices: [
+            "Build innovative digital campaign tools and prepare for a snap general election, campaigning for the Labour Party",
+            "Create an internal constitution, allowing members to become democratically involved within Labour Future, ensuring everyone can contribute",
+            "Supporting a small number of crowdsourced campaigns with a view to amend the law or enact a policy: examples of these would be making the NHS public and/or offering better justice for victims of violence? ",
+            "Helping members become more active within the Labour Party",
+            "Build a future Labour candidates program ",
+            "Become a resource for education, both political and digital ",
+            "Complete in-depth policy research, helping the Labour Party to hold the government to account",
+            "Become distinct from the Labour Party and champion our own crowdsourced policy initiatives and campaigns",
+            "Other (please specify)"
+            ],
+            name: "What should be the focus of Labour Future over the next 12-18 months"
+            }
+            ],
+            name: "page2"
+            },
+            {
+            elements: [
+            {
+            type: "checkbox",
+            choices: [
+            "Fundraising - helping the local party generate more funds",
+            "Campaign support, both digital and traditional ",
+            "Crowdsource ideas and the mood from local CLPS with regular reachout meet ups and digital surveys",
+            "Build a CLP mobile application, meaning all members can stay in touch with each other instantly",
+            "Partner with groups such as Momentum and Progress, helping reach over the political divides within our party ",
+            "Provide digital support to help increase volunteers and volunteer management ",
+            "Provide detailed activism training ",
+            "Become the ear of the Labour Party, listening to members and ensuring our views are heard at the top of the party",
+            "Other (please specify)"
+            ],
+            choicesOrder: "random",
+            name: "How can Labour Future better support the local Labour Party (CLPs)",
+            title: "How can Labour Future better support the local Labour Party (CLPs)"
+            }
+            ],
+            name: "page3"
+            },
+            {
+            elements: [
+            {
+            type: "radiogroup",
+            name: "How should Labour Future be developed as an organisation? ",
+            title: "How should Labour Future be developed as an organisation? ",
+            choices: [
+            "Internally with the current Labour Future team",
+            "Through crowdsourcing the ideas of our members and following their wishes where practical and reasonable? One member, one vote",
+            "Building Labour Future as a democratic organisation with full membership involvement in key decisions",
+            "Or a combination of all of the above ensuring members have a say on key decisions and issues. ",
+            "Other (please specify)"
+            ]
+            }
+            ],
+            name: "page4"
+            },
+            {
+            elements: [
+            {
+            type: "radiogroup",
+            name: "How should internal democracy be managed with Labour Future? ",
+            title: "How should internal democracy be managed with Labour Future? ",
+            choices: [
+            "One member, one vote on elections and decisions",
+            "Labour Future elects our own delegates through one member and one vote, these delegates then manage the day to day democracy of Labour Future.",
+            "Other (please specify)"
+            ]
+            }
+            ],
+            name: "page5"
+            },
+            {
+            elements: [
+            {
+            type: "radiogroup",
+            name: "Would you like to be more involved with Fundraising and how this money is spent? ",
+            title: "Would you like to be more involved with fundraising and how this money is spent? ",
+            choices: [
+            "Yes - all members should decide how the budgets are spent, one member, one vote",
+            "Only delegates should influence how fundrasing is managed and spent",
+            "The members should decide on the top level items they would like to support, such as specific campaigns, and Labour Future team must manage these budgets ensure priorities are maintained"
+            ]
+            }
+            ],
+            name: "page6"
+            },
+            {
+            elements: [
+            {
+            type: "radiogroup",
+            name: "Should Labour Future deploy in each and every CLP so that we are presented nationally and so that all members can benefit from the Labour Future offering? ",
+            title: "Should Labour Future deploy in each and every CLP so that we are presented nationally and so that all members can benefit from the Labour Future offering? ",
+            choices: [
+            "Yes",
+            "No",
+            "Don't know"
+            ]
+            }
+            ],
+            name: "page7"
+            },
+            {
+            elements: [
+            {
+            type: "comment",
+            name: "What would you like to see Labour Future do different and any other information you would like to let us know? ",
+            title: "What would you like to see Labour Future do different and any other information you would like to let us know? "
+            }
+            ],
+            name: "page8"
+            },
+            {
+            elements: [
+            {
+            type: "matrixdropdown",
+            choices: [
+            1,
+            2,
+            3,
+            4,
+            5
+            ],
+            columns: [
+            {
+            name: "Column 1",
+            title: "Preference 1",
+            choices: [
+            "Making the NHS 100% Public, and improve the working conditions",
+            "Ending violence in our society with a hard line approach to those who commit multiple violent offenses",
+            "Brexit - Getting the best deal for the UK",
+            "Animal Welfare, Ivory Markets, Hunting and Animal Cruelty ",
+            "Ending Child Poverty in the UK",
+            "Working to end the Housing Crisis ",
+            "Social Mobility, making society fairer ",
+            "Rebalancing the UK Economy, growing manufacturing and increasing productivity"
+            ],
+            cellType: "dropdown"
+            },
+            {
+            name: "Column 2",
+            title: "Preference 2",
+            choices: [
+            "Making the NHS 100% Public, and improve the working conditions",
+            "Ending violence in our society with a hard line approach to those who commit multiple violent offenses",
+            "Brexit - Getting the best deal for the UK",
+            "Animal Welfare, Ivory Markets, Hunting and Animal Cruelty ",
+            "Ending Child Poverty in the UK",
+            "Working to end the Housing Crisis ",
+            "Social Mobility, making society fairer ",
+            "Rebalancing the UK Economy, growing manufacturing and increasing productivity"
+            ],
+            cellType: "dropdown"
+            }
+            ],
+            name: "Please vote for your two favourite campaigns; the ones you think Labour Future could have the most impact with",
+            rows: [
+            "Campaigns"
+            ],
+            title: "Please vote for your two favourite campaigns; the ones you think Labour Future could have the most impact with"
+            }
+            ],
+            name: "page9"
+            }
+            ],
+            sendResultOnPageNext: true
+            }
+            
+            
+            
+            
+            function sendDataToServer(survey) {
+            survey.sendResult('4caea12a-a7e7-404c-9c1b-dad8b01cd726');
+            }
+            
+            
+            
+            var survey = new Survey.Model(surveyJSON);
+            $("#surveyContainer").Survey({
+            model: survey,
+            onComplete: sendDataToServer
+            });
+            
+            
+            
+        </script>
+    </body>
+</html>

@@ -6,6 +6,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" href="../../favicon.ico">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <title>Starter Template for Bootstrap</title>
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
@@ -43,9 +44,22 @@
             min-height: 50px;
             margin-bottom: 0px;
             border: 1px solid transparent;
+            padding-bottom: 20px;
             }
             h5, h5 {
             font-size: 24px;
+            }
+
+            @media (min-width: 768px) {
+            .navbar-nav>li>a {
+                padding-top: 30px;
+                padding-bottom: 15px;
+            }}
+
+            .jumbotron {
+            margin-bottom: 30px;
+            color: #efefef;
+            background-color: #98121f;
             }
             .mt-0 {
             margin-top: 0 !important;
@@ -322,15 +336,44 @@
             </div>
         </div>
         <div class="container">
+
+
+            <div class="row mt-4">
+
+                <div class="col-md-8 p-2">
+
+                    <p class="lead">Labour Future now has an enormous online presence and is making a tremendous contribution to campaigning for the Labour Party and for the next Labour government. Labour Future has been operating for just over a year and has grown at a rapid pace. We now need to take a step back and look at our operation and how we can improve to ensure we provide the service our supporters want and that we deliver increased support for the Labour Party by contributing to policy development and innovative campaigning techniques.</p>
+
+                    <p class="lead">To that end we have created the supporters survey which we would like you to complete. Tell us how you would like Labour Future to develop. Let us know what campaigns you think we should be prioritising to build support for the Party. Give your views on how we can involve members and supporters in our internal processes and in campaigning.</p>
+
+                    <p class="lead">Labour has made enormous progress over the past year or so. As the Tories continue to make a mess of the Brexit negotiations, and their domestic policy programme continues to unravel day by day we need to ensure as Labour Party supporters that we are best placed to win the next general election and to build a more progressive Britain for the many and not just the few.</p>
+                    <br />
+                    <button class="btn btn-green btn-lg"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Start Survey</button>
+                </div>
+
+                <div class="col-md-4 p-2 mt-5">
+
+                    <img src="http://cdn2.alphr.com/sites/alphr/files/2017/09/jeremy_corbyn_wants_a_future_labour_government_to_tax_robots_-_1.jpg" class="img-responsive">
+                    <br /><br />
+                    <img src="http://www.telegraph.co.uk/content/dam/news/2016/06/14/Jeremy_Corbyn_C_poses_for_a_group_photo_with_ot-xlarge_trans_NvBQzQNjv4BqF4WwDpbO-CkdHTTCi9TWzn18KT_4_FMA2v0i2DTR8eY.jpg" class="img-responsive">
+
+                </div>
+
+            </div>
+
+
+
+
+
             <div class="row">
                 <div class="col-md-12 pa-3 text-left">
-                    <h1>Begin the survey here</h1>
+                    <small>[HIDDEN UNLESS LOGGED IN]</small><h1>Begin the survey here</h1>
                     <div id="surveyContainer"></div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div id="surveyResult"></div>
+                    <div id="surveyResult"></div><small>[END]</small>
                 </div>
             </div>
         </div>

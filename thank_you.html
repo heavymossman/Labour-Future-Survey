@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../favicon.ico">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <title>Starter Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+        <style type="text/css">
+            .btn-green {
+            background-color: rgba(195, 23, 40, 0.89);
+            color: #fff;
+            border-radius: 0px;
+            padding: 10px 16px;
+            font-size: 18px;
+            line-height: 1.33;
+            }
+            .btn-green:hover, .btn-green:focus {
+            background-color: rgba(195, 23, 40, 1);
+            color: #fff;
+            padding: 10px 16px;
+            font-size: 18px;
+            line-height: 1.33;
+            }
+            .btn {
+                border-radius: 0px;
+            }
+            .panel-footer {
+            padding: 0 15px;
+            border:none;
+            text-align: right;
+            background-color: #fff;
+            }
+            .panel-body {
+            text-align: left!important;
+            font-size: larger;
+            }
+            .navbar {
+            position: relative;
+            min-height: 50px;
+            margin-bottom: 0px;
+            border: 1px solid transparent;
+            padding-bottom: 20px;
+            }
+            h5, h5 {
+            font-size: 24px;
+            }
+
+            @media (min-width: 768px) {
+            .navbar-nav>li>a {
+                padding-top: 30px;
+                padding-bottom: 15px;
+            }}
+
+
+
+            .jumbotron {
+            margin-bottom: 30px;
+            color: #efefef;
+            background-color: #901c28;
+            }
+
+
+            /* SOCIAL BUTTONS */
+
+            .btn-facebook {
+                color: #fff;
+                background-color: rgba(59, 89, 152, 0.77);
+                border-color: rgba(0,0,0,0.2);
+            }
+
+            .btn-facebook:hover {
+                color: #fff;
+                background-color: rgba(59, 89, 152, 1);
+            }
+
+            .btn-twitter {
+                color: #fff;
+                background-color: rgba(21, 131, 215, 0.77);
+                border-color: rgba(0,0,0,0.2);
+            }
+
+            .btn-twitter:hover {
+                color: #fff;
+                background-color: rgba(21, 131, 215, 1);
+            }
+
+            .btn-tumblr {
+                color: #fff;
+                background-color: rgba(17, 28, 38, 0.77);
+                border-color: rgba(0,0,0,0.2);
+            }
+
+            .btn-tumblr:hover {
+                color: #fff;
+                background-color: rgba(17, 28, 38, 1);
+            }
+
+            .btn-donate {
+                color: #fff;
+                background-color: rgba(144, 28, 40, 0.77);
+                border-color: rgba(0,0,0,0.2);
+            }
+
+            .btn-donate:hover {
+                color: #fff;
+                background-color: rgba(144, 28, 40, 1);
+            }
+            
+            .btn-social {
+                position: relative;
+                padding-left: 44px;
+                text-align: left;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+
+            .mt-0 {
+            margin-top: 0 !important;
+            }
+            .mt-1 {
+            margin-top: .25rem !important;
+            }
+            .mt-2 {
+            margin-top: .5rem !important;
+            }
+            .mt-3 {
+            margin-top: 1rem !important;
+            }
+            .mt-4 {
+            margin-top: 1rem !important;
+            }
+            .mt-5 {
+            margin-top: 3rem !important;
+            }
+            .mb-0 {
+            margin-bottom: 0 !important;
+            }
+            .mb-1 {
+            margin-bottom: .25rem !important;
+            }
+            .mb-2 {
+            margin-bottom: .5rem !important;
+            }
+            .mb-3 {
+            margin-bottom: 1rem !important;
+            }
+            .ml-0 {
+            margin-left: 0 !important;
+            }
+            .ml-1 {
+            margin-left: .25rem !important;
+            }
+            .ml-2 {
+            margin-left: .5rem !important;
+            }
+            .ml-3 {
+            margin-left: 1rem !important;
+            }
+            .mr-0 {
+            margin-right: 0 !important;
+            }
+            .mr-1 {
+            margin-right: .25rem !important;
+            }
+            .mr-2 {
+            margin-right: .5rem !important;
+            }
+            .mr-3 {
+            margin-right: 1rem !important;
+            }
+            .mx-0 {
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+            }
+            .mx-1 {
+            margin-right: .25rem !important;
+            margin-left: .25rem !important;
+            }
+            .mx-2 {
+            margin-right: .5rem !important;
+            margin-left: .5rem !important;
+            }
+            .mx-3 {
+            margin-right: 1rem !important;
+            margin-left: 1rem !important;
+            }
+            .my-0 {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            }
+            .my-1 {
+            margin-top: .25rem !important;
+            margin-bottom: .25rem !important;
+            }
+            .my-2 {
+            margin-top: .5rem !important;
+            margin-bottom: .5rem !important;
+            }
+            .my-3 {
+            margin-top: 1rem !important;
+            margin-bottom: 1rem !important;
+            }
+            /* PADDING */
+            .pt-0 {
+            padding-top: 0 !important;
+            }
+            .pt-1 {
+            padding-top: .25rem !important;
+            }
+            .pt-2 {
+            padding-top: .5rem !important;
+            }
+            .pt-3 {
+            padding-top: 1rem !important;
+            }
+            .pb-0 {
+            padding-bottom: 0 !important;
+            }
+            .pb-1 {
+            padding-bottom: .25rem !important;
+            }
+            .pb-2 {
+            padding-bottom: .5rem !important;
+            }
+            .pb-3 {
+            padding-bottom: 1rem !important;
+            }
+            .pl-0 {
+            padding-left: 0 !important;
+            }
+            .pl-1 {
+            padding-left: .25rem !important;
+            }
+            .pl-2 {
+            padding-left: .5rem !important;
+            }
+            .pl-3 {
+            padding-left: 1rem !important;
+            }
+            .pr-0 {
+            padding-right: 0 !important;
+            }
+            .pr-1 {
+            padding-right: .25rem !important;
+            }
+            .pr-2 {
+            padding-right: .5rem !important;
+            }
+            .pr-3 {
+            padding-right: 1rem !important;
+            }
+            .px-0 {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+            }
+            .px-1 {
+            padding-right: .25rem !important;
+            padding-left: .25rem !important;
+            }
+            .px-2 {
+            padding-right: .5rem !important;
+            padding-left: .5rem !important;
+            }
+            .px-3 {
+            padding-right: 1rem !important;
+            padding-left: 1rem !important;
+            }
+            .py-0 {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            }
+            .py-1 {
+            padding-top: .25rem !important;
+            padding-bottom: .25rem !important;
+            }
+            .py-2 {
+            padding-top: .5rem !important;
+            padding-bottom: .5rem !important;
+            }
+            .py-3 {
+            padding-top: 1rem !important;
+            padding-bottom: 1rem !important;
+            }
+            .py-4 {
+            padding-top: 1.5rem !important;
+            padding-bottom: 1.5rem !important;
+            }
+            .py-5 {
+            padding-top: 2.25rem !important;
+            padding-bottom: 2.25rem !important;
+            }
+            .pa-0 {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+            }
+            .pa-1 {
+            padding-top: .25rem !important;
+            padding-bottom: .25rem !important;
+            padding-right: .25rem !important;
+            padding-left: .25rem !important;
+            }
+            .pa-2 {
+            padding-top: .5rem !important;
+            padding-bottom: .5rem !important;
+            padding-right: .5rem !important;
+            padding-left: .5rem !important;
+            }
+            .pa-3 {
+            padding-top: 1rem !important;
+            padding-bottom: 1rem !important;
+            padding-right: 1rem !important;
+            padding-left: 1rem !important;
+            }
+            .navbar {
+            position: relative;
+            min-height: 70px;
+            margin-bottom: 0px;
+            border: 1px solid transparent;
+            font-size: larger;
+            }
+            label {
+            padding-bottom: 8px;
+            padding-top: 8px;
+            }
+            .grey-bk {
+            background-color: #eeeeee;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-default ">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="http://d3n8a8pro7vhmx.cloudfront.net/labourleave/sites/1013/meta_images/original/labour-future-logo-website-png.png?1506101884" class="img-responsive" width="90%"></a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Login</a></li>
+                            <li><a href="thank_you.html">Thank you page</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Account details</a></li>
+                                    <li><a href="#">Surveys</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Labour Future Website</a></li>
+                                    <li><a href="#">Labour Future Facebook</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </header>
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3 py-5">Thank you {%NAME%}</h1>
+                <p>Your Labour Future survey has been succesfully completed.</p>
+
+                
+            </div>
+        </div>
+        <div class="container">
+
+
+            <div class="row mt-4">
+
+                <div class="col-md-8 p-2">
+
+                    <img class="img-responsive" src="https://www.thelondoneconomic.com/wp-content/uploads/2017/05/Jermey_Corbyn.jpg">
+
+                    
+
+                    
+                    
+                </div>
+
+                <div class="col-md-4 p-2 mt-1">
+
+                    <p class="lead py-5">Please share this survey widely, help build the type or organisation for the people, by the people.</p>
+
+                    <button class="btn btn-facebook btn-block btn-lg"><i class="fa fa-facebook" aria-hidden="true"></i> &nbsp;&nbsp;Share on Facebook</button>
+
+                    <button class="btn btn-twitter btn-block btn-lg"><i class="fa fa-twitter" aria-hidden="true"></i> &nbsp;&nbsp;Share on Twitter</button>
+
+                    <button class="btn btn-tumblr btn-block btn-lg"><i class="fa fa-tumblr" aria-hidden="true"></i> &nbsp;&nbsp;Share on Tumblr</button>
+
+                    <button class="btn btn-donate btn-block btn-lg"><i class="fa fa-money" aria-hidden="true"></i> &nbsp;&nbsp;Make a Donation</button>
+
+                </div>
+
+            </div>
+
+
+
+            
+        </div>
+        <footer>
+            <div class="container-fluid mt-5 grey-bk pt-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><small>Copyright 2017 &nbsp;&nbsp;|&nbsp;&nbsp; <a href="#">Labour Future</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="#">Privacy</a>  &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="#">Terms</a>  &nbsp;&nbsp;|&nbsp;&nbsp;</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://surveyjs.azureedge.net/0.12.32/survey.jquery.min.js"></script>
+        
+    </body>
+</html>
